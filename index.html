@@ -12,13 +12,15 @@
 
 <body>
     <div class="container">
-        <h1>Password Generador</h1>
+        <h1 class="title">Password Generador</h1>
         <h3>Generado De Clave</h3>
         <h2>Password Clave</h2>
-        <form>
-            <label for=""> Number of Characters (Numero de Caracters)</label>
-            <input type="range" min="8" max="128" value="10" id="caracteramountrange">
-            <input type="number" min="8" max="128" value="10" id="caracteramountnumber">
+        <form class="form">
+            <label for="numberofcharacters"> Number of Characters (Numero de Caracters)</label>
+            <div class="numberofcharacters-container">
+                <input type="range" min="8" max="128" value="10" id="caracteramountrange">
+                <input class="number-input" type="number" min="8" max="128" value="10" id="caracteramountnumber">
+            </div>
 
             <label for="includeuppercase">Include Uppercase (Incluir Mayusculas)</label>
             <input type="checkbox" id="includeuppercase">
