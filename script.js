@@ -1,17 +1,16 @@
-const caracteramountrange = document.getElementById
-    ('caracteramountrange')
-const caracteramountnumber = document.getElementById
-    ('carateramountnumber')
-const includeuppercase = document.getElementById
-    ('includeuppercase')
-const includelowercase = document.getElementById
-    ('includelowercase')
-const includenumbers = document.getElementById
-    ('includenumbers')
-const includesymbols = document.getElementById
-    ('includesymbols')
+const caracteramountrange = document.getElementById('caracteramountrange')
+const caracteramountnumber = document.getElementById('carateramountnumber')
+const includeuppercase = document.getElementById('includeuppercase')
+const includelowercase = document.getElementById('includelowercase')
+const includenumbers = document.getElementById('includenumbers')
+const includesymbols = document.getElementById('includesymbols')
+const form = document.getElementById('passwordgeneradorform')
+const passwordDisplay = document.getElementById('passwordDisplay')
+const includeuppercase = Arrayfrom('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
+const includelowercase = Arrayfrom('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+const includenumbers = Arrayfrom('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
+const includesymbols = Arrayfrom('!', '@', '#', '$', '%', '^', '&', '*')
 
-const form = document.getElementById("passwordgeneradorform")
 
 caracteramountrange.addEventListener('input', syncCharatersAmount)
 caracteramountnumber.addEventListener('input', syncCharatersAmount)
@@ -25,22 +24,19 @@ form.addEventListener('submit', e => {
     const includesymbols = includeuppersymbolsElement.checked
     const password = generatepassword(CharatersAmount, includeuppercase, includelower,
         includenumbers, includesymbols)
+    passwordDisplay.innerText = password
 
 })
 
 function generatepassword(CharatersAmount, includeuppercase, includelower,
     includenumbers, includesymbols) {
-    function generatePassword() {
-        var length = 8,
-            charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-            retVal = "";
-        for (var i = 0, n = charset.length; i < length; ++i) {
-            retVal += charset.charAt(Math.floor(Math.random() * n));
-        }
-        return retVal;
-    }
+    let
 
 }
+
+
+
+
 
 function syncCharatersAmount(e) {
     const value = e.target.value
