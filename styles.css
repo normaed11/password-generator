@@ -46,3 +46,31 @@ label{
     width: 3rem
 
 }
+.generadodeclave{
+    margin: 0;
+
+}
+
+.password {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333 ;
+    height: 2rem;
+    width: 350px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem; 
+}
+.button {
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 1rem;
+}
