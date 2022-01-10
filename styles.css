@@ -38,7 +38,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 label{
     font-weight: bold;
 }
-.numberofcharacters-container{
+.numberofcharacterscontainer{
     display: flex;
     align-items: center;
 }
