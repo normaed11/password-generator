@@ -1,23 +1,24 @@
+// where to get the Elements
 const caracteramountrange = document.getElementById('caracteramountrange')
 const caracteramountnumber = document.getElementById('carateramountnumber')
-const includeuppercase = document.getElementById('includeuppercase')
-const includelowercase = document.getElementById('includelowercase')
-const includenumbers = document.getElementById('includenumbers')
-const includesymbols = document.getElementById('includesymbols')
-const form = document.getElementById('passwordgeneradorform')
-console.log(
-    "hello"
-)
+const includeuppercaseElement = document.getElementById('includeuppercase')
+const includelowercaseElement = document.getElementById('includelowercase')
+const includenumbersElement = document.getElementById('includenumbers')
+const includeuppersymbolsElement = document.getElementById('includesymbols')
+const form = document.getElementById('passwordgeneratorform')
 const passwordDisplay = document.getElementById('passwordDisplay')
-const includeuppercase = Arrayfrom('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
-const includelowercase = Arrayfrom('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
-const includenumbers = Arrayfrom('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
-const includesymbols = Arrayfrom('!', '@', '#', '$', '%', '^', '&', '*')
 
+//list of variables 
+const includeuppercase = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
+const includelowercase = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+const includenumbers = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
+const includesymbols = array('!', '@', '#', '$', '%', '^', '&', '*')
 
+//Event listenerners
 caracteramountrange.addEventListener('input', syncCharatersAmount)
 caracteramountnumber.addEventListener('input', syncCharatersAmount)
 
+//form input
 form.addEventListener('submit', e => {
     e.preventDefault()
     const CharatersAmount = caracteramountnumber.value
@@ -33,8 +34,6 @@ form.addEventListener('submit', e => {
         includesymbols
     )
 
-
-
     const password = generatepassword(CharatersAmount, includeuppercase, includelower,
         includenumbers, includesymbols)
     passwordDisplay.innerText = password
@@ -43,12 +42,13 @@ form.addEventListener('submit', e => {
 
 function generatepassword(CharatersAmount, includeuppercase, includelower,
     includenumbers, includesymbols) {
-    let
+    let includelowercase = array
+    if (includelowercase) = array
+    if (includeuppercase) = array
+    if (includenumbers) = array
+    if (includeuppercase) = array
 
 }
-
-
-
 
 
 function syncCharatersAmount(e) {
